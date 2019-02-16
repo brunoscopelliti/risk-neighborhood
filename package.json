@@ -1,0 +1,30 @@
+{
+  "name": "risk-neighborhood",
+  "version": "0.1.0",
+  "description": "Risk world information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoscopelliti/risk-neighborhood.git"
+  },
+  "keywords": [
+    "risk",
+    "risk board",
+    "risk world",
+    "risk map",
+    "map",
+    "world",
+    "risiko",
+    "risiko board",
+    "risiko map"
+  ],
+  "author": "Bruno Scopelliti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunoscopelliti/risk-neighborhood/issues"
+  },
+  "homepage": "https://github.com/brunoscopelliti/risk-neighborhood#readme"
+}
