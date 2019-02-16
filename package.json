@@ -4,7 +4,9 @@
   "description": "Risk world information",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint index.js tests",
+    "test": "npm run lint && jest",
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest"
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,14 @@
   "bugs": {
     "url": "https://github.com/brunoscopelliti/risk-neighborhood/issues"
   },
-  "homepage": "https://github.com/brunoscopelliti/risk-neighborhood#readme"
+  "homepage": "https://github.com/brunoscopelliti/risk-neighborhood#readme",
+  "devDependencies": {
+    "eslint": "5.14.0",
+    "eslint-config-bruno": "2.0.0",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-node": "8.0.1",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-standard": "4.0.0",
+    "jest": "24.1.0"
+  }
 }
