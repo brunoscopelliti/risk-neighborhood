@@ -14,11 +14,6 @@ const world = new Map([
   ["south-africa",
     ["congo", "east-africa", "madagascar"]],
 
-  // TODO fix inconsistency
-  // middle-east and china are not neighbors on the svg map,
-  // but they are neighbors in my phisical version.
-  // so india and afghanistan are not neighbors as well.
-
   ["afghanistan",
     ["china", "middle-east", "ukraine", "ural"]],
   ["china",
