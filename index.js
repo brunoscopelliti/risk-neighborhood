@@ -20,7 +20,7 @@ const world = new Map([
   // so india and afghanistan are not neighbors as well.
 
   ["afghanistan",
-    ["china", "india", "middle-east", "ukraine", "ural"]],
+    ["china", "middle-east", "ukraine", "ural"]],
   ["china",
     ["afghanistan", "india", "middle-east", "mongolia", "siam", "siberia", "ural"]],
   ["india",
@@ -32,7 +32,7 @@ const world = new Map([
   ["kamchatka",
     ["alaska", "irkutsk", "mongolia", "japan", "yakutsk"]],
   ["middle-east",
-    ["afghanistan", "egypt", "india", "southern-europe", "ukraine"]],
+    ["afghanistan", "china", "egypt", "india", "southern-europe", "ukraine"]],
   ["mongolia",
     ["china", "irkutsk", "japan", "kamchatka", "siberia"]],
   ["siam",
