@@ -105,7 +105,26 @@ const world = new Map([
  */
 const neighbors =
   (country, neighbors) => {
-    throw new Error("Not implemented");
+    if (!world.has(country)) {
+      throw new Error("Invalid country: '" + country + "' doesn't exist.");
+    }
+    var neighborhood = world.get(country);
+
+    if (neighbors) {
+      if (!world.has(neighbors)) {
+        throw new Error("Invalid country: '" + neighbors + "' doesn't exist.");
+      }
+      var countries = neighborhood.find(function (country) {
+        return country === neighbors;
+      });
+
+      if (countries) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+    return neighborhood;
   };
 
 module.exports = neighbors;

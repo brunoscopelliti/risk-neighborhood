@@ -12,15 +12,15 @@ describe("get neighbors", () => {
   });
 
   it("returns neighbors", () => {
-    expect(function () {
-      neighbors("china");
-    }).toBe(["afghanistan", "india", "middle-east", "mongolia", "siam", "siberia", "ural"]);
+    expect(
+      neighbors("china")
+    ).toEqual(["afghanistan", "india", "middle-east", "mongolia", "siam", "siberia", "ural"]);
   });
 
   it("returns neighbors (pacman effect)", () => {
-    expect(function () {
-      neighbors("alaska");
-    }).toBe(["alberta", "kamchatka", "northwest-territory"]);
+    expect(
+      neighbors("alaska")
+    ).toEqual(["alberta", "kamchatka", "northwest-territory"]);
   });
 });
 
@@ -32,14 +32,14 @@ describe("are neighbors", () => {
   });
 
   it("returns false if countries are not neighbors", () => {
-    expect(function () {
-      neighbors("china", "southern-europe");
-    }).toBe(false);
+    expect(
+      neighbors("china", "southern-europe")
+    ).toBe(false);
   });
 
   it("returns true if countries are neighbors", () => {
-    expect(function () {
-      neighbors("china", "middle-east");
-    }).toBe(false);
+    expect(
+      neighbors("china", "middle-east")
+    ).toBe(true);
   });
 });
