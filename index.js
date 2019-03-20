@@ -80,7 +80,7 @@ const world = new Map([
   ["new-guniea",
     ["eastern-oceania", "indonesia", "western-oceania"]],
   ["western-oceania",
-    ["eastern-oceania", "indonesia", "new-guinea"]],
+    ["eastern-oceania", "indonesia", "new-guniea"]],
 
   ["argentina",
     ["brazil", "peru"]],

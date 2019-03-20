@@ -1,6 +1,6 @@
 {
   "name": "risk-neighborhood",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Risk world information",
   "main": "index.js",
   "scripts": {
