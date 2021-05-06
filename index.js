@@ -108,13 +108,15 @@ const neighbors =
     if (!world.has(country)) {
       throw new Error("Invalid country: '" + country + "' doesn't exist.");
     }
-    var neighborhood = world.get(country);
+
+    const neighborhood = world.get(country);
 
     if (neighbors) {
       if (!world.has(neighbors)) {
         throw new Error("Invalid country: '" + neighbors + "' doesn't exist.");
       }
-      var countries = neighborhood.find(function (country) {
+
+      const countries = neighborhood.find(function (country) {
         return country === neighbors;
       });
 
